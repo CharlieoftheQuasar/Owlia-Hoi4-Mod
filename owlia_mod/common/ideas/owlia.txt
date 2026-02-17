@@ -1,0 +1,47 @@
+ideas = {
+
+	country = {
+		great_depression_legacy = {
+			picture = usa_great_depression_2
+			
+			allowed = {
+				tag = OWL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.3-
+				conscription_factor = -0.15
+				local_resources_factor = -0.1
+			}
+		}	
+	}
+	
+	country = {
+		flight_of_the_exiles = {
+			picture = saf_ossewabrandwag_fascism
+			
+			allowed = {
+				tag = OWL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				fascism_acceptance = 0
+				stability_factor = -0.2
+			}
+		}	
+	}
+}

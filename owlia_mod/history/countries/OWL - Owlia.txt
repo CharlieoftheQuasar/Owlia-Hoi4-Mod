@@ -722,3 +722,8 @@ create_country_leader = {
 recruit_character = OWL_bloppa
 recruit_character = OWL_goober
 recruit_character = OWL_disorganized_leadership
+
+add_ideas = {
+great_depression_legacy
+flight_of_the_exiles
+}

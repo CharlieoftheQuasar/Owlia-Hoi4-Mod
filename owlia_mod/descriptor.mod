@@ -4,5 +4,5 @@ tags={
 	"Gameplay"
 	"National Focuses"
 }
-name="Owlia Mod"
+name="owlia_mod"
 supported_version="1.17.3.0"
