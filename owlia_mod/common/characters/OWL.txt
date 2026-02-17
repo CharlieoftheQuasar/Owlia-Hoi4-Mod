@@ -1,0 +1,37 @@
+characters = {
+	OWL_bloppa = {
+		name = "Alfred von Bloppenstein" 
+		portraits = {
+			civilian = {
+				large = gfx/leaders/OWL/Portrait_Owlia_Bloppa.dds
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+		}
+	}
+	
+	OWL_goober = {
+		name = "Garrison Goobois" 
+		portraits = {
+			civilian = {
+				large = gfx/leaders/OWL/Portrait_Owlia_Goober.dds
+			}
+		}
+		country_leader = {
+			ideology = marxism
+		}
+	}
+	
+	OWL_disorganized_leadership = {
+		name = "Disorganized Leadership" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_POL_the_sejm
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+		}
+	}
+}

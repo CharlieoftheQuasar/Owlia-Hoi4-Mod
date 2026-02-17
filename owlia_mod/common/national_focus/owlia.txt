@@ -1,0 +1,185 @@
+﻿focus_tree = {
+	id = owlian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = OWL
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = OWL_white_green_blue
+		icon = GFX_goal_OWL_white_green_blue
+		x = 20
+		y = 0
+		#relative_position_id = AST_additional_militia_training
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 3
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = -50
+			}
+	}
+
+focus = {
+		id = OWL_a_failing_democracy
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 20
+		y = 1
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 1
+		prerequisite = { focus = OWL_white_green_blue }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = -67
+			}
+	}
+	
+	focus = {
+		id = OWL_bad_economy
+		icon = GFX_focus_generic_industry_2
+		x = 22
+		y = 1
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 1
+		prerequisite = { focus = OWL_white_green_blue }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = -67
+			}
+	}
+	
+	focus = {
+		id = OWL_weak_army
+		icon = GFX_focus_PRC_develop_the_army
+		x = 18
+		y = 1
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 1
+		prerequisite = { focus = OWL_white_green_blue }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = -69999999999999999999
+			}
+	}
+	
+		focus = {
+		id = OWL_phoenix_from_the_ashes
+		icon = GFX_focus_AUS_bring_phonix_insurance_from_the_ashes
+		x = 20
+		y = 2
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_a_failing_democracy }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+}		
