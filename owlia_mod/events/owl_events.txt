@@ -1,4 +1,4 @@
-add_namespace = owl
+add_namespace = owlia
 
 country_event = {
     id = owlia.1
