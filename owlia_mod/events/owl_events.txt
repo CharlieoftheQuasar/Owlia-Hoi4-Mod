@@ -1,0 +1,15 @@
+add_namespace = owl
+
+country_event = {
+    id = owlia.1
+    title = owlia.1.t
+    desc = owlia.1.d
+    picture = GFX_report_event_generic
+
+    is_triggered_only = yes
+
+    option = {
+        name = owlia.1.a
+        add_political_power = 10
+    }
+}
