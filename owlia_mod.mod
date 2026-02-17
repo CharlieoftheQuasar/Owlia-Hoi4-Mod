@@ -6,4 +6,4 @@ tags={
 }
 name="owlia_mod"
 supported_version="1.17.3.0"
-path="C:/Users/Charlie/Documents/Paradox Interactive/Hearts of Iron IV/mod/owlia_mod"
+path="mod/owlia_mod"
