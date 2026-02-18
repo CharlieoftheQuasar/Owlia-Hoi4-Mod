@@ -2,5 +2,7 @@ l_english:
  owlia.1.t: "The White, Green, and Blue into 1936"
  owlia.1.d: "PLACEHOLDER"
  owlia.1.a: "Interesting..."
-
- OWL_trigger_event: "The White, Green, and Blue into 1936"
+ owlia.unification.1.t: "The Rebirth of the Empire"
+ owlia.unification.1.d: "Since the dissolution of the Owlistain Empire, its reunification has lived on only as a distant dream. Now that this dream has finally been realized, a question remains: what shall this new state be called? We may reclaim the historic title of the Owlistain Empire, honoring the legacy of the past. Alternatively, we may proclaim the Hestowlian Empire, a name championed by those who see it as the symbol of a new beginning and a new imperial identity."
+ owlia.unification.1.a: "The Owlistain Empire lives on!"
+ owlia.unification.1.b: "A New Age for the Empire!"
