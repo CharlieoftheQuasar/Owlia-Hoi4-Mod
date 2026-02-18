@@ -13,3 +13,26 @@ country_event = {
         add_political_power = 10
     }
 }
+
+country_event = {
+    id = owlia.unification.1
+    title = owlia.unification.1.t
+    desc = owlia.unification.1.d
+    picture = GFX_report_event_generic_political
+
+    is_triggered_only = yes
+
+    option = {
+        name = owlia.unification.1.a
+        set_country_name = {
+            name = "Owlistain Empire"
+        }
+    }
+
+    option = {
+        name = owlia.unification.1.b
+        set_country_name = {
+            name = "Hestowlian Empire"
+        }
+    }
+}
