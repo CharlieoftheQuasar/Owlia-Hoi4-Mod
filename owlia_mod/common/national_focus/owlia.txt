@@ -48,7 +48,7 @@
 			}
 	}
 
-focus = {
+	focus = {
 		id = OWL_a_failing_democracy
 		icon = GFX_focus_ARG_defense_and_democracy
 		x = 20
@@ -150,7 +150,7 @@ focus = {
 			}
 	}
 	
-		focus = {
+	focus = {
 		id = OWL_phoenix_from_the_ashes
 		icon = GFX_focus_AUS_bring_phonix_insurance_from_the_ashes
 		x = 20
@@ -179,6 +179,113 @@ focus = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_constitutional_convention
+		icon = GFX_focus_POL_complete_april_constitution
+		x = 20
+		y = 3
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_phoenix_from_the_ashes }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_a_new_republic
+		icon = GFX_focus_AFG_parliamentary_democracy
+		x = 17
+		y = 4
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_constitutional_convention }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		
+		mutually_exclusive = {
+			focus = OWL_the_junta_endures
+		}
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_the_junta_endures
+		icon = GFX_focus_generic_military_dictatorship
+		x = 23
+		y = 4
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_constitutional_convention }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		mutually_exclusive = {
+			focus = OWL_a_new_republic
+		}
+		
 		completion_reward = {
 			add_political_power = 55
 			}

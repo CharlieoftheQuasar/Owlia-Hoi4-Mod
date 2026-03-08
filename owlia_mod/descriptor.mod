@@ -1,8 +1,6 @@
-version="0.02"
+version="0.04"
 tags={
 	"Alternative History"
-	"Gameplay"
-	"National Focuses"
 }
 name="owlia_mod"
-supported_version="1.17.3.0"
+supported_version="1.17.4.1"

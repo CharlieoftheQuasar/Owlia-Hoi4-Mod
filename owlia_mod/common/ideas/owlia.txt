@@ -15,7 +15,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 1
+				political_power_cost = 0.5
 				consumer_goods_factor = 0.3-
 				conscription_factor = -0.15
 				local_resources_factor = -0.1
@@ -38,8 +38,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = 1
-				fascism_acceptance = 0
+				political_power_cost = 0.2
+				fascism_acceptance = -50
 				stability_factor = -0.2
 			}
 		}	
