@@ -256,7 +256,7 @@
 	focus = {
 		id = OWL_the_junta_endures
 		icon = GFX_focus_generic_military_dictatorship
-		x = 23
+		x = 30
 		y = 4
 		#relative_position_id = OWL_white_green_blue
 	
@@ -286,6 +286,1441 @@
 			focus = OWL_a_new_republic
 		}
 		
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_democratic_enthusiasm
+		icon = GFX_focus_generic_democratic_europe
+		x = 17
+		y = 5
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_a_new_republic }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_elections
+		icon = GFX_focus_generic_election
+		x = 17
+		y = 6
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_democratic_enthusiasm }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_nof_victory
+		icon = GFX_focus_RAJ_the_sun_sets
+		x = 11
+		y = 7
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_elections }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		mutually_exclusive = {
+			focus = OWL_ola_victory
+			focus = OWL_dlf_victory
+			focus = OWL_gpo_victory
+		}
+		
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_ola_victory
+		icon = GFX_goal_OWL_ola_victory
+		x = 15
+		y = 7
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_elections }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		mutually_exclusive = {
+			focus = OWL_nof_victory
+			focus = OWL_dlf_victory
+			focus = OWL_gpo_victory
+		}
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_dlf_victory
+		icon = GFX_focus_generic_social_democracy
+		x = 19
+		y = 7
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_elections }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		mutually_exclusive = {
+			focus = OWL_ola_victory
+			focus = OWL_nof_victory
+			focus = OWL_gpo_victory
+		}
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_gpo_victory
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 23
+		y = 7
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_elections }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		mutually_exclusive = {
+			focus = OWL_ola_victory
+			focus = OWL_dlf_victory
+			focus = OWL_nof_victory
+		}
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_multiparty_democracy
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = 10
+		y = 8
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_nof_victory }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_bicameral_legislature
+		icon = GFX_focus_generic_improve_the_administration_2
+		x = 12
+		y = 8
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_nof_victory }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_president_health
+		icon = GFX_focus_generic_bad_medical
+		x = 11
+		y = 9
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_nof_victory }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_day_of_mourning
+		icon = GFX_focus_RAJ_i_am_death
+		x = 11
+		y = 10
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_president_health }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_a_vision_for_owlia
+		icon = GFX_focus_generic_swooping_falcon
+		x = 9
+		y = 9
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_multiparty_democracy }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_nebbersburg_administration
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = 11
+		y = 11
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_day_of_mourning }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_laissez_faire
+		icon = GFX_focus_generic_stockpile_currency
+		x = 15
+		y = 9
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_ola_victory }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_democratic_institutions
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 17
+		y = 8
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_ola_victory 
+						 focus = OWL_dlf_victory
+		}
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_limited_executive_powers
+		icon = GFX_focus_PER_limit_foreign_influence
+		x = 14
+		y = 8
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_ola_victory }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_bipartisanship
+		icon = GFX_focus_generic_treaty
+		x = 17
+		y = 9
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_democratic_institutions }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_electoral_reform
+		icon = GFX_focus_generic_election
+		x = 13
+		y = 9
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_ola_victory }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_federalism
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		x = 13
+		y = 10
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_electoral_reform
+						 focus = OWL_limited_executive_powers	
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_stock_exchange
+		icon = GFX_focus_RAJ_special_economic_zones
+		x = 15
+		y = 10
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_laissez_faire }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_social_progressivism
+		icon = GFX_focus_PER_women_vote
+		x = 13
+		y = 11
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_federalism }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		mutually_exclusive = {
+			focus = OWL_conservative_values
+		}
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_conservative_values
+		icon = GFX_focus_CHL_look_to_tradition
+		x = 15
+		y = 11
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_dlf_victory }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		mutually_exclusive = {
+			focus = OWL_progressivism
+		}
+
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_form_lfo
+		icon = GFX_focus_por_workers_of_iberia
+		x = 21
+		y = 8
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_dlf_victory 
+		                 focus = OWL_gpo_victory 
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_ministry_of_labour
+		icon = GFX_focus_generic_worker_administration
+		x = 19
+		y = 8
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_dlf_victory }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_reform_not_revolution
+		icon = GFX_focus_SWE_socialist_reforms
+		x = 19
+		y = 9
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_ministry_of_labour }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_gender_equality
+		icon = GFX_focus_generic_women_in_military
+		x = 21
+		y = 9
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_ministry_of_labour }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_protect_workers_and_farmers
+		icon = GFX_focus_generic_workers
+		x = 20
+		y = 10
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_ministry_of_labour }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_unity_and_equality
+		icon = GFX_goal_generic_national_unity
+		x = 19
+		y = 11
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_reform_not_revolution }
+		prerequisite = { focus = OWL_protect_workers_and_farmers }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_velvet_glove_governance
+		icon = GFX_focus_RAJ_tryst_with_destiny_hand
+		x = 21
+		y = 11
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_gender_equality }
+		prerequisite = { focus = OWL_protect_workers_and_farmers }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_popular_support
+		icon = GFX_focus_generic_support_the_left_right
+		x = 23
+		y = 11
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_protect_workers_and_farmers }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_protect_democracy
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 17
+		y = 11
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_bipartisanship }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_rise_of_the_onp
+		icon = GFX_goal_OWL_white_green_blue
+		x = 9
+		y = 12
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_nebbersburg_administration }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_protectionism
+		icon = GFX_goal_generic_territory_or_war
+		x = 10
+		y = 13
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_rise_of_the_onp }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_increase_military
+		icon = GFX_focus_chi_army_reform
+		x = 12
+		y = 13
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_rise_of_the_onp }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_encourage_population_growth
+		icon = GFX_focus_generic_population_growth
+		x = 8
+		y = 13
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_rise_of_the_onp }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_issue_of_the_exiles
+		icon = GFX_focus_PHI_return_of_the_exiles
+		x = 5
+		y = 13
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_rise_of_the_onp }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_stay_the_course
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 6
+		y = 14
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_issue_of_the_exiles }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		mutually_exclusive = {
+			focus = OWL_pardon_exiles
+		}
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_pardon_exiles
+		icon = GFX_focus_generic_sympathetic_judges
+		x = 4
+		y = 14
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_issue_of_the_exiles }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		mutually_exclusive = {
+			focus = OWL_stay_the_course
+		}
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_crush_fascist_elements
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 8
+		y = 15
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_stay_the_course }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_army_contacts
+		icon = GFX_focus_generic_fascist_troops
+		x = 4
+		y = 15
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_pardon_exiles }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_fascist_propaganda
+		icon = GFX_focus_generic_fascist_propaganda
+		x = 0
+		y = 15
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_pardon_exiles }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_fanatic_ultranationalism
+		icon = GFX_focus_SOV_panslavic_nationalism
+		x = 2
+		y = 15
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_pardon_exiles }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
+		completion_reward = {
+			add_political_power = 55
+			}
+	}
+	focus = {
+		id = OWL_march_on_temeschwar
+		icon = GFX_focus_ITA_generic_fascist_workers
+		x = 2
+		y = 16
+		#relative_position_id = OWL_white_green_blue
+	
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+		
+		cost = 2
+		prerequisite = { focus = OWL_fanatic_ultranationalism }
+		prerequisite = { focus = OWL_fascist_propaganda }
+		prerequisite = { focus = OWL_army_contacts }
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+
 		completion_reward = {
 			add_political_power = 55
 			}

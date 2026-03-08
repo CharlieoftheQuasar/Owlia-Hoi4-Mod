@@ -8,6 +8,11 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
+	name = "GFX_goal_OWL_ola_victory"
+	texturefile = "gfx/interface/goals/focus_OWL_ola_victory.dds"			
+	}	
+	
+	SpriteType = {
 	name = "GFX_goal_continuous_air_production"
 	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			
 	}	
